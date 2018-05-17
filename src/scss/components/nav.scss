@@ -1,0 +1,30 @@
+.nav {
+	padding-top: 41px;
+	ul {
+		margin: 0;
+	}
+}
+.nav-list {
+
+	padding: 0;
+
+	padding: 0;
+	li {
+	display: inline-block;
+	margin-right: 25px;
+	padding-bottom: 38px;
+	line-height: 1;
+}
+	li:last-child {
+	margin-right: 0;
+}
+	li:first-child {
+	padding-left: 52px;
+}
+	li a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+    font-size: 15px;  
+}
+}
