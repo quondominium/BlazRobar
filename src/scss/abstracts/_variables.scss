@@ -24,8 +24,8 @@ $base: (
   'base-text-color': #000,
   'base-background-color': #fff,
   'base-link-color':#000,
-  'base-font-size': 16px,
-  'base-line-height': 1.2,
+  'base-font-size': 12px,
+  'base-line-height': 1.333333,
   'base-font-family': unquote("Montserrat Regular, Arial, Helvetica, sans-serif"),
   'vertical-rhythm': '(map-get($base, base-line-height) * 1em)',
   'base-min-width': 320px
@@ -41,8 +41,8 @@ $forms: (
 
 // Breakpoints for include media mixin
 $breakpoints: (
-  'phone': 480px,
-  'tablet': 768px,
+  'phone': 320px,
+  'tablet': 640px,
   'desktop': 980px,
   'widescreen': 1200px
 );
@@ -56,4 +56,14 @@ $media-expressions: (
   'portrait': '(orientation: portrait)',
   'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
   'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// Vars for colors
+$color: (
+  'darken': #373c3f,
+  'lighten': #ebebeb,
+  'darken-orphan': #27212c,
+  'darken-more-orphan': #202529,
+  'lighten-orphan': #bc3183,
+  'brighten-orphan': #5b0fa1
 );

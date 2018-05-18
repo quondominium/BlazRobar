@@ -1,7 +1,15 @@
 .header {
-	width: 1024px;
-	background: #373c3f;
+	background: map-deep-get($color, 'darken');
+	.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 0 19px;
+	@include media("≥tablet", "<desktop") {
+	padding-left: 36px;	
+	}
+	@include media("≥desktop") {
+	padding: 0 10px;	
+	}
 }
-.header-label {
-	display: none;
 }
