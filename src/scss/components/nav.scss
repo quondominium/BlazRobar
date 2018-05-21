@@ -1,0 +1,52 @@
+.nav {
+	display: none;
+	font-size: 15px;
+	line-height: 1;
+	a {
+	display: block;
+	color: #fff; 
+	padding: 21px;
+	text-align: center;		
+	}
+	.is-navigation-opened & {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	box-shadow: 5px 1px 0 0 #6c6c6c;
+	background: map-deep-get($color, 'darken');
+	}
+	@include media("≥desktop") {
+	display: block;
+	padding: 45px 0 41px 44px;	
+	a {
+		display: block;
+		color: #fff; 
+		padding: 0;
+		text-align: center;		
+	}
+	&-list {
+		display: flex;
+	}
+	}
+	&-list {
+	@extend %listreset;
+			li {
+			margin-right: 25px;
+			&:last-child {
+				margin-right: 0;
+				}
+			}
+			a {
+			text-decoration: none;
+			&:hover {
+			background: #fff;
+			color: map-deep-get($color, 'darken');
+			}
+	}
+	}
+}

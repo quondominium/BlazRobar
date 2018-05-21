@@ -1,0 +1,14 @@
+.header-label {
+	color: #fff;
+	font-size: 15px;
+	line-height: 1;
+	@include media("≥tablet", "<desktop") {
+		font-size: 36px;	
+	}
+	@include media("≥desktop") {
+		display: none;	
+	}
+	p {
+		margin: 0;
+	}
+}
