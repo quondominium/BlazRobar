@@ -10,7 +10,7 @@
 
 	    @include media("≥tablet", "<desktop") {
 			height: 151px;
-			padding: 0 0 0 54px;
+			padding: 0 0 0 53px;
 	    }
 	    @include media("≥desktop", "<widescreen") {
 			height: 234px;
@@ -34,10 +34,10 @@
 				line-height: 1;
 
 				@include media("≥tablet", "<desktop") {
-					font-size: 18px;
+					font-size: 20px;
 			    }
 			    @include media("≥desktop", "<widescreen") {
-					font-size: 28px;
+					font-size: 30px;
 			    } 
 			    @include media("≥widescreen") {
 					font-size: 32px;
@@ -45,7 +45,7 @@
 			}
 		}
 		.chevron-button {
-			width: 21.875%;
+			width: 24%;
 
 			.icon-chevron {
 				color: map-deep-get($color, 'first-base');

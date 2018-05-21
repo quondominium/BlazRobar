@@ -9,10 +9,10 @@
 			flex-direction: row;	
 		}
 		@include media("≥desktop", "<widescreen") {
-			height: 284px;
+			height: 281px;
 	    } 
 	    @include media("≥widescreen") {
-			height: 296px;
+			height: 295px;
 	    }
 
 		.chevron-button {

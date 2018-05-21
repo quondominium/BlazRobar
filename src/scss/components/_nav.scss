@@ -22,7 +22,7 @@
 	}
 	@include media("≥desktop") {
 	display: block;
-	padding: 45px 0 38px 44px;	
+	padding: 43px 0 38px 44px;	
 	a {
 		display: block;
 		color: map-deep-get($color, 'first-base'); 

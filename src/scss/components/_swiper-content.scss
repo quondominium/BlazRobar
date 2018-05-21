@@ -39,7 +39,6 @@
     }
 }
 .slider-content {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -102,6 +101,7 @@
     	}
     	}
 	a {
+		position: relative;
 		display: block;
 		text-decoration: none;
 		color: rgba(255, 255, 255, 0.5);

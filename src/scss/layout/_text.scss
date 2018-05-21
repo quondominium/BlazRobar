@@ -3,26 +3,25 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 33px 18px 0 35px;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 33px 25px 0 35px;
 		
 		@include media("≥desktop") {
 			flex-direction: row;
 			flex-wrap: wrap;	
 		}
 	    @include media("≥tablet", "<desktop") {
-			padding: 66px 73px 0 75px;
+			padding: 67px 73px 0 75px;
 		}
 		@include media("≥desktop", "<widescreen") {
-			padding: 64px 73px 0 75px;
+			padding: 67px 73px 0 76px;
 		}
 	    @include media("≥widescreen") {
-			padding: 49px 73px 0 78px;
+			padding: 51px 73px 0 80px;
 	    }
 
 		h1 {
-			width: 96%;
 			margin-bottom: 19px;
 			line-height: 1;
 			font-size: 19px;
@@ -34,34 +33,37 @@
 				font-weight: 400;
 		    }
 		    @include media("≥tablet", "<desktop") {
-					margin:  0 ;
-					margin-bottom: 45px;
+				margin:  0 ;
+				margin-bottom: 45px;
 			}
-			@include media("≥desktop") {
-				margin-bottom: 20px;
+			@include media("≥desktop", "<widescreen") {
+				margin-bottom: 23px;
+			} 
+			@include media("≥widescreen") {
+				margin-bottom: 22px;
 			} 
 		}
 		
 		p:nth-child(2), p:nth-child(4) {
 			@include media("≥desktop", "<widescreen") {
-			padding: 0 26px 0 30px;
+				padding: 0 20px 0 16px;
 			}
 			@include media("≥widescreen") {
-			padding: 0 25px 0 25px;
+				padding: 0 10px 0 10px;
 			}
 		}
 		p:nth-child(1), p:nth-child(3) {
 			@include media("≥desktop", "<widescreen") {
-			padding: 0 56px 0 0;
+				padding: 0 36px 0 0;
 			}
 			@include media("≥widescreen") {
-			padding: 0 50px 0 0;
+				padding: 0 20px 0 0;
 			}
 		}
 		.text-container {
 			display: flex;
 			flex-flow: column wrap;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;	
 			font-size: 14px;
 			color: map-deep-get($color, 'darken-smoothen-orphan');
@@ -83,11 +85,11 @@
 				line-height: 1.97;
 		    }
 			@include media("≥desktop", "<widescreen") {
-				margin: 0 0 34px;
+				margin: 0 0 57px;
 				line-height: 1.9;
 			} 
 		    @include media("≥widescreen") {
-				margin: 0 0 34px;
+				margin: 0 0 31px;
 				line-height: 1.9;
 		    }
 		    }
