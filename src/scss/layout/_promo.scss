@@ -60,6 +60,7 @@
 			    @include media("≥widescreen") {
 					font-size: 56px;
 			    }	
+
 			    &:before {
 			    @include media("<tablet") {	
 			     	font-weight: 400;

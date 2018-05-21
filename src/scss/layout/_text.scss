@@ -42,8 +42,7 @@
 			@include media("≥widescreen") {
 				margin-bottom: 22px;
 			} 
-		}
-		
+		}		
 		p:nth-child(2), p:nth-child(4) {
 			@include media("≥desktop", "<widescreen") {
 				padding: 0 20px 0 16px;

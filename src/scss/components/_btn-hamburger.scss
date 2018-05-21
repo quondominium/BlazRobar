@@ -9,6 +9,10 @@
     background:  map-deep-get($color, 'darken-more-orphan');
     z-index: 3;
 
+	@include media("≥desktop") {
+		display: none;	
+	}
+	
 	    .hamburger-icon,
 		&:before,
 		&:after {
@@ -40,6 +44,7 @@
 		&.is-active {
 			right: 0;
 			top: 0;
+			
 			.hamburger-icon {
 				opacity: 0;	
 			}
@@ -83,8 +88,5 @@
 				bottom: 36px;
 			}
 	}
-	}
-	@include media("≥desktop") {
-		display: none;	
 	}
 }

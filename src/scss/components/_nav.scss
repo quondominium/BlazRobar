@@ -3,29 +3,27 @@
 	font-size: 15px;
 	line-height: 1;
 	a {
-	display: block;
-	padding: 21px;
-	text-align: center;	
-	color: map-deep-get($color, 'first-base');
+		display: block;
+		padding: 21px;
+		text-align: center;	
 	}
 	.is-navigation-opened & {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-	background: map-deep-get($color, 'darken');
-	z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+		background: map-deep-get($color, 'darken');
+		z-index: 2;
 	}
 	@include media("≥desktop") {
-	display: block;
-	padding: 43px 0 38px 44px;	
-	a {
 		display: block;
-		color: map-deep-get($color, 'first-base'); 
+		padding: 43px 0 38px 44px;	
+	a {
+		display: block; 
 		padding: 0;
 		text-align: center;		
 	}
@@ -35,8 +33,9 @@
 	}
 	&-list {
 	@extend %listreset;
+			
 			li {
-			margin-right: 29px;
+				margin-right: 29px;
 			&:last-child {
 				margin-right: 0;
 				}
@@ -45,10 +44,10 @@
 				}
 			}
 			a {
-			text-decoration: none;
-			color: map-deep-get($color, 'lighten'); 
+				text-decoration: none;
+				color: map-deep-get($color, 'lighten'); 
 			&:hover {
-			color: map-deep-get($color, 'first-base');
+				color: map-deep-get($color, 'first-base');
 			}
 	}
 	}
