@@ -1,14 +1,17 @@
 .header-label {
-	color: #fff;
-	font-size: 15px;
+	color: map-deep-get($color, 'first-base');
+	font-size: 12px;
 	line-height: 1;
-	@include media("≥tablet", "<desktop") {
-		font-size: 36px;	
-	}
-	@include media("≥desktop") {
-		display: none;	
-	}
+
 	p {
 		margin: 0;
+	}
+	
+	@include media("≥tablet", "<desktop") {
+		font-size: 25px;	
+	}
+
+	@include media("≥desktop") {
+		display: none;	
 	}
 }

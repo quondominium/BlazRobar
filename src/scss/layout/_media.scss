@@ -1,0 +1,45 @@
+.media {
+		.container {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: 0;
+		
+		@include media("≥desktop") {
+			flex-direction: row;	
+		}
+		.chevron-button {
+			height: 275px;
+			font-size: 46px;
+			color: map-deep-get($color, 'first-base');
+
+			@include media("≥desktop") {
+				width: 33.36%;	
+			}
+			@include media("≥tablet", "<desktop") {
+				height: 548px;
+				font-size: 86px;
+		    }
+		    @include media("≥desktop", "<widescreen") {
+				height: 284px;
+		    } 
+		    @include media("≥widescreen") {
+				height: 296px;
+		    }
+		}
+		.modal {
+			display: flex;
+			flex: 1;
+			flex-flow: column nowrap;
+
+			@include media("≥desktop") {
+				flex-direction: row;	
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+		}
+	}
+}

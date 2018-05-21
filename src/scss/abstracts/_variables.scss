@@ -44,7 +44,7 @@ $breakpoints: (
   'phone': 320px,
   'tablet': 640px,
   'desktop': 980px,
-  'widescreen': 1200px
+  'widescreen': 1024px
 );
 
 // Keywords for include media mixin
@@ -60,10 +60,15 @@ $media-expressions: (
 
 // Vars for colors
 $color: (
+  'first-base': #fff,
+  'second-base': #000, 
   'darken': #373c3f,
   'lighten': #ebebeb,
   'darken-orphan': #27212c,
   'darken-more-orphan': #202529,
   'lighten-orphan': #bc3183,
-  'brighten-orphan': #5b0fa1
+  'brighten-orphan': #5b0fa1,
+  'smoothen-orphan': #9282a0,
+  'darken-smoothen-orphan': #515151,
+  'brighten-smoothen-orphan': #088ca5
 );

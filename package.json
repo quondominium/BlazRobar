@@ -63,6 +63,12 @@
   "dependencies": {
     "include-media": "^1.4.9",
     "jquery": "^3.3.1",
-    "normalize.css": "^5.0.0"
+    "lg-fullscreen": "^1.0.1",
+    "lg-thumbnail": "^1.1.0",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.10",
+    "normalize.css": "^5.0.0",
+    "npm": "^6.0.1",
+    "swiper": "^4.2.6"
   }
 }

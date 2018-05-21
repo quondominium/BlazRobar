@@ -1,0 +1,94 @@
+.text {
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 18px 0 35px;
+		
+		@include media("≥desktop") {
+			flex-direction: row;
+			flex-wrap: wrap;	
+		}
+	    @include media("≥tablet", "<desktop") {
+			padding: 0 73px 0 75px;
+		}
+		@include media("≥desktop", "<widescreen") {
+			padding: 0 73px 0 75px;
+		}
+	    @include media("≥widescreen") {
+			padding: 0 73px 0 78px;
+	    }
+
+		h1 {
+			width: 100%;
+			margin: 33px 0 19px;
+			line-height: 1;
+			font-size: 19px;
+			text-align: left;
+			color: map-deep-get($color, 'brighten-smoothen-orphan');
+			
+			@include media("≥tablet") {
+				font-size: 30px;
+				font-weight: 400;
+		    }
+		    @include media("≥tablet", "<desktop") {
+					margin: 66px 0 45px;
+			}
+			@include media("≥desktop", "<widescreen") {
+				margin: 64px 0 20px;
+			} 
+		    @include media("≥widescreen") {
+				margin: 49px 0 20px;
+		    }
+		}
+		
+		div:nth-child(3) {
+			@include media("≥desktop", "<widescreen") {
+			padding: 0 26px 0 30px;
+			}
+			@include media("≥widescreen") {
+			padding: 0 25px 0 25px;
+			}
+		}
+
+		.column {
+			display: flex;
+			flex-basis: 50%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			font-size: 14px;
+			color: map-deep-get($color, 'darken-smoothen-orphan');
+
+			@include media("≥tablet", "<desktop") {
+				font-size: 22px;
+		    }
+			@include media("≥desktop", "<widescreen") {
+				padding: 0 56px 0 0;
+			}
+			@include media("≥widescreen") {
+				padding: 0 50px 0 0;
+			}
+		    .paragraph {
+		    	margin: 0 0 23px;
+		    	line-height: 1.6;
+			
+			@include media("≥tablet", "<desktop") {
+				margin: 0 0 56px;
+				line-height: 1.97;
+		    }
+			@include media("≥desktop", "<widescreen") {
+				margin: 0 0 34px;
+				line-height: 1.9;
+			} 
+		    @include media("≥widescreen") {
+				margin: 0 0 34px;
+				line-height: 1.9;
+		    }
+		    }
+		}
+	}
+}

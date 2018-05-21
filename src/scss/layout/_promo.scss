@@ -1,0 +1,71 @@
+.promo {
+
+	.container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		width: 100%;
+		height: 75px;
+		padding: 0;
+
+	    @include media("≥tablet", "<desktop") {
+			height: 151px;
+	    }
+	    @include media("≥desktop", "<widescreen") {
+			height: 234px;
+	    } 
+	    @include media("≥widescreen") {
+			height: 245px;
+	    } 
+
+		.heading {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h3 {
+				margin: 0 0 0 27px;
+				color: map-deep-get($color, 'smoothen-orphan');
+				font-size: 10px;
+				font-weight: 400;
+				line-height: 1;
+
+				@include media("≥tablet", "<desktop") {
+					font-size: 18px;
+					margin: 0 0 0 54px;
+			    }
+			    @include media("≥desktop", "<widescreen") {
+					font-size: 28px;
+					margin: 0 0 0 82px;
+			    } 
+			    @include media("≥widescreen") {
+					font-size: 32px;
+					margin: 0 0 0 84px;
+			    }
+			}
+		}
+		.chevron-button {
+			width: 21.875%;
+
+			.icon-chevron {
+				color: map-deep-get($color, 'first-base');
+				font-size: 18px;
+
+				@include media("≥tablet", "<desktop") {
+					font-size: 36px;
+			    }
+			    @include media("≥desktop", "<widescreen") {
+					font-size: 56px;
+			    } 
+			    @include media("≥widescreen") {
+					font-size: 56px;
+			    }	
+			    &:before {
+			    @include media("<tablet") {	
+			     	font-weight: 400;
+			     	}
+			     }
+			}
+		}
+	}
+}

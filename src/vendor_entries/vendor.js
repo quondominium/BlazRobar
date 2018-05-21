@@ -3,5 +3,11 @@
 // Note: ES6 support for these imports is not supported in base build
 
 module.exports = [
-  './node_modules/jquery/dist/jquery.js'
+  './node_modules/jquery/dist/jquery.js',
+  './node_modules/swiper/dist/js/swiper.min.js',
+  './node_modules/lightgallery/dist/js/lightgallery.min.js',
+  './node_modules/lightgallery/modules/lg-thumbnail.min.js',
+  './node_modules/lightgallery/modules/lg-fullscreen.min.js',
+  './node_modules/lightgallery/modules/lg-zoom.min.js'
 ];
+

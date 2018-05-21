@@ -1,0 +1,90 @@
+.btn-hamburger {
+	display: block;
+    position: relative;
+    border: 0;
+    outline: 0;
+    width: 42px;
+    height: 37px;
+    cursor: pointer;
+    background:  map-deep-get($color, 'darken-more-orphan');
+    z-index: 3;
+
+	    .hamburger-icon,
+		&:before,
+		&:after {
+			display: block;
+			position: absolute;
+		    margin: 0 auto;
+		    width: 16px;
+		    height: 2px;
+		    background: #fff;
+		}
+		&:before,
+		&:after {
+			content: '';
+		}
+		.hamburger-icon {
+			top: 17px;
+	    	left: 14px;			
+		}
+		&:before{
+		    top: 13px;
+		    left: 14px;	
+			transition:  transform ease 300ms;     
+	}
+		&:after{
+		    bottom: 14px;
+		    left: 14px;	
+			transition:  transform ease 300ms; 
+		}
+		&.is-active {
+			right: 0;
+			top: 0;
+			.hamburger-icon {
+				opacity: 0;	
+			}
+			&:before {
+				top: 17px;
+				transform: rotate(-45deg);
+			}
+			&:after {
+				bottom: 18px;
+				transform: rotate(45deg);
+			}
+		}
+
+    @include media("≥tablet", "<desktop") {
+		width: 82px;
+	 	height: 74px;
+
+		.hamburger-icon,
+		&:before,
+		&:after {
+	    	width: 32px;
+	    	height: 4px;
+		}
+		.hamburger-icon {
+			top: 34px;
+			left: 26px;		
+		}
+		&:before{
+			top: 26px;
+	    	left: 26px;     
+		}
+		&:after{
+			bottom: 28px;
+			left: 26px;
+		}
+		&.is-active {
+			&:before {
+				top: 34px;
+			}
+			&:after {
+				bottom: 36px;
+			}
+	}
+	}
+	@include media("≥desktop") {
+		display: none;	
+	}
+}
