@@ -8,24 +8,27 @@
 		@include media("≥desktop") {
 			flex-direction: row;	
 		}
+		@include media("≥desktop", "<widescreen") {
+			height: 284px;
+	    } 
+	    @include media("≥widescreen") {
+			height: 296px;
+	    }
+
 		.chevron-button {
 			height: 275px;
 			font-size: 46px;
 			color: map-deep-get($color, 'first-base');
 
 			@include media("≥desktop") {
-				width: 33.36%;	
+				width: 33.36%;
+				height: 100%;	
 			}
 			@include media("≥tablet", "<desktop") {
 				height: 548px;
 				font-size: 86px;
 		    }
-		    @include media("≥desktop", "<widescreen") {
-				height: 284px;
-		    } 
-		    @include media("≥widescreen") {
-				height: 296px;
-		    }
+
 		}
 		.modal {
 			display: flex;

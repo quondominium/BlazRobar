@@ -6,16 +6,19 @@
 		justify-content: space-between;
 		width: 100%;
 		height: 75px;
-		padding: 0;
+		padding: 0 0 0 27px;
 
 	    @include media("≥tablet", "<desktop") {
 			height: 151px;
+			padding: 0 0 0 54px;
 	    }
 	    @include media("≥desktop", "<widescreen") {
 			height: 234px;
+			padding: 0 0 0 82px;
 	    } 
 	    @include media("≥widescreen") {
 			height: 245px;
+			padding: 0 0 0 84px;
 	    } 
 
 		.heading {
@@ -24,7 +27,7 @@
 			align-items: center;
 
 			h3 {
-				margin: 0 0 0 27px;
+				margin: 0;
 				color: map-deep-get($color, 'smoothen-orphan');
 				font-size: 10px;
 				font-weight: 400;
@@ -32,15 +35,12 @@
 
 				@include media("≥tablet", "<desktop") {
 					font-size: 18px;
-					margin: 0 0 0 54px;
 			    }
 			    @include media("≥desktop", "<widescreen") {
 					font-size: 28px;
-					margin: 0 0 0 82px;
 			    } 
 			    @include media("≥widescreen") {
 					font-size: 32px;
-					margin: 0 0 0 84px;
 			    }
 			}
 		}
